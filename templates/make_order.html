@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class ="container">
+        <div class = "row">
+            <div class = "col">
+                <img src = "{{product.img_url}}" width="400" height="400">
+            </div>
+            <div class = "col">
+                <form method ="post">
+                    <h1>{{product.title}}</h1>
+                    <h3>Make Order:</h3>
+                    <label>How many you want to buy</label>
+                    <input type="number" id = "qountety" name = "qountety">
+                    <br>
+                    <label>Select Delivery Date</label>
+                    <input type="date" id = "date" name = "date">
+                    <button type="submit">Order Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
